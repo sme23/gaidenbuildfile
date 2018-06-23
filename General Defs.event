@@ -1,4 +1,4 @@
-//Classes
+//Classes, for character editor
 #define Cavalier 0x01 //Mounted Tier 1
 #define Armor 0x02 //Soldier Tier 2
 #define PegasusKnight 0x03 //Flier Tier 1
@@ -24,7 +24,7 @@
 #define Hero 0x17 //Alm's Promoted Class
 #define Princess 0x18 //Celica's Promoted Class
 
-//Items
+//Items, for character editor
 #define SteelLance 0x02
 #define SilverLance 0x03
 #define Javelin 0x04
