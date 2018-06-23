@@ -13,7 +13,11 @@ ASM folder contains some NES ASM notes I've taken + an assembler, however I doub
 TODO (in a vague order of priority):
 
 -Class editing, already have the nmms for it so it should be fairly easy
+
 -Maps, look into the FE1 map formatter to see if it'll work here as well
+
 -Text editing, cleanup the text installer to be easier to edit + properly define the text commands
+
 -Celice doc, contains a lot of helpful information, offsets, etc. that can be utilized
+
 -Spell lists, locate where spell learn lists are in ROM and how to edit them
