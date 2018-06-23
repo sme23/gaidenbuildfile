@@ -1,0 +1,5 @@
+#define ThunderSwordMt 15 //Weapon might
+#define ThunderSwordWt 3 //Weapon weight 
+#define ThunderSwordCrt 0 //Weapon crit
+#define ThunderSwordHit 80 //Weapon accuracy
+#define ThunderSwordEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

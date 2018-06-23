@@ -1,0 +1,5 @@
+#define ShadowSwordMt 13 //Weapon might
+#define ShadowSwordWt 5 //Weapon weight 
+#define ShadowSwordCrt 0 //Weapon crit
+#define ShadowSwordHit 70 //Weapon accuracy
+#define ShadowSwordEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

@@ -1,0 +1,20 @@
+#define ForsythCharNo 0x0C //Character order in menu is determined by character #, defined here
+#define ForsythClass Soldier//Starting class
+#define ForsythLevel 4 //Starting Level
+#define ForsythBaseHP 28 //Base HP
+#define ForsythBaseStr 11 //Base Str
+#define ForsythBaseSkl 4 //Base Skl
+#define ForsythBaseSpd 5 //Base Spd
+#define ForsythBaseLck 3 //Base Lck
+#define ForsythBaseDef 7 //Base Def
+#define ForsythBaseRes 5 //Base Res, stored separately from the rest of the base stats
+#define ForsythStrGrowth 40 //Str Growth
+#define ForsythSklGrowth 10 //Skl Growth
+#define ForsythSpdGrowth 20 //Sod Growth
+#define ForsythLckGrowth 20 //Lck Growth
+#define ForsythDefGrowth 10 //Def Growth
+#define ForsythHPGrowth 30 //HP Growth
+#define ForsythLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define ForsythItem 0 //Item in equip slot
+#define ForsythEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

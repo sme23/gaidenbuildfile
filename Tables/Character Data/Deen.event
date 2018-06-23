@@ -1,0 +1,20 @@
+#define DeenCharNo 0x1A //Character order in menu is determined by character #, defined here
+#define DeenClass Myrmidon //Starting class
+#define DeenLevel 5 //Starting Level
+#define DeenBaseHP 21 //Base HP
+#define DeenBaseStr 13 //Base Str
+#define DeenBaseSkl 17 //Base Skl
+#define DeenBaseSpd 17 //Base Spd
+#define DeenBaseLck 6 //Base Lck
+#define DeenBaseDef 9 //Base Def
+#define DeenBaseRes 4 //Base Res, stored separately from the rest of the base stats
+#define DeenStrGrowth 20 //Str Growth
+#define DeenSklGrowth 15 //Skl Growth
+#define DeenSpdGrowth 15 //Sod Growth
+#define DeenLckGrowth 10 //Lck Growth
+#define DeenDefGrowth 10 //Def Growth
+#define DeenHPGrowth 40 //HP Growth
+#define DeenLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define DeenItem BraveSword //Item in equip slot
+#define DeenEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

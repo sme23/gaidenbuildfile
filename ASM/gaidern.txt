@@ -1,0 +1,24 @@
+Set Interrupt Disable flag
+Clear Decimal Mode flag
+Load $0000 into X, X=$B5
+Store X into $2000 (PPU Control)
+Store X into $2001 (PPU Mask)
+Load current PPU status into A
+Branch if previous opcode returns positive. loops back to previous opcode (only doesn't at scanline 241)
+Load current PPU status into A
+Branch if previous opcode returns positive, loops back to previous opcode (only doesn't at scanline 241)
+Decrement X register by 1, sets Zero and Negative flags
+Copy X register into the stack
+Load $B5 into A
+Store A into $5F
+Store A into $60
+Store A into $61
+Store A into $62
+Load $7 into Y
+Store Y into $1
+Load $0 into Y
+Store Y into $0
+Copy Y into A
+Store A into $0, Y
+Increment Y by 1
+Branch to $C09E (back to storing A in $0, Y) if $C09E does not return $91

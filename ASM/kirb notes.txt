@@ -1,0 +1,6 @@
+bank $0F is loaded to $C000
+any other bank loaded is loaded to $8000
+
+	lda #banknumber
+	sta $A000
+is used to switch out banks

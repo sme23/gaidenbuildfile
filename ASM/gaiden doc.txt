@@ -1,0 +1,11 @@
+4E 45 53 1A - Static NES header info
+10 - # of 16KB PRG blocks
+10 - # of 8KB CHR blocks
+A2 - Mapper data, unclear on this 
+00 - Background mirroring, 00 means it's not
+00 00 00 00 - ???
+00 00 00 00 - ???
+CHR is 128KB, PRG is 256KB; this means that there's 16 banks of each, which the $10 in the thing implies
+Conversely, this means that the mapper is $A2 and it appears the second half of the header is just padding for whatever reason
+
+

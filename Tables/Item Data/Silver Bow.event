@@ -1,0 +1,5 @@
+#define SilverBowMt 7 //Weapon might
+#define SilverBowWt 2 //Weapon weight 
+#define SilverBowCrt 0 //Weapon crit
+#define SilverBowHit 80 //Weapon accuracy
+#define SilverBowEff 0x03 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

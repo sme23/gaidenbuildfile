@@ -1,0 +1,20 @@
+#define PythonCharNo 0x14 //Character order in menu is determined by character #, defined here
+#define PythonClass Archer //Starting class
+#define PythonLevel 3 //Starting Level
+#define PythonBaseHP 24 //Base HP
+#define PythonBaseStr 10 //Base Str
+#define PythonBaseSkl 3 //Base Skl
+#define PythonBaseSpd 4 //Base Spd
+#define PythonBaseLck 2 //Base Lck
+#define PythonBaseDef 5 //Base Def
+#define PythonBaseRes 4 //Base Res, stored separately from the rest of the base stats
+#define PythonStrGrowth 40 //Str Growth
+#define PythonSklGrowth 15 //Skl Growth
+#define PythonSpdGrowth 20 //Sod Growth
+#define PythonLckGrowth 10 //Lck Growth
+#define PythonDefGrowth 15 //Def Growth
+#define PythonHPGrowth 40 //HP Growth
+#define PythonLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define PythonItem 0 //Item in equip slot
+#define PythonEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,20 @@
+#define MycenCharNo 0x03 //Character order in menu is determined by character #, defined here
+#define MycenClass GoldKnight //Starting class
+#define MycenLevel 7 //Starting Level
+#define MycenBaseHP 44 //Base HP
+#define MycenBaseStr 22 //Base Str
+#define MycenBaseSkl 14 //Base Skl
+#define MycenBaseSpd 11 //Base Spd
+#define MycenBaseLck 3 //Base Lck
+#define MycenBaseDef 18 //Base Def
+#define MycenBaseRes 8 //Base Res, stored separately from the rest of the base stats
+#define MycenStrGrowth 5 //Str Growth
+#define MycenSklGrowth 5 //Skl Growth
+#define MycenSpdGrowth 5 //Sod Growth
+#define MycenLckGrowth 0 //Lck Growth
+#define MycenDefGrowth 5 //Def Growth
+#define MycenHPGrowth 20 //HP Growth
+#define MycenLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define MycenItem 0 //Item in equip slot
+#define MycenEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

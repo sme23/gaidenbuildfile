@@ -1,0 +1,20 @@
+#define Unused2CharNo 0x18 //Character order in menu is determined by character #, defined here
+#define Unused2Class Paladin //Starting class
+#define Unused2Level 5 //Starting Level
+#define Unused2BaseHP 32 //Base HP
+#define Unused2BaseStr 12//Base Str
+#define Unused2BaseSkl 6 //Base Skl
+#define Unused2BaseSpd 9 //Base Spd
+#define Unused2BaseLck 3 //Base Lck
+#define Unused2BaseDef 7 //Base Def
+#define Unused2BaseRes 5 //Base Res, stored separately from the rest of the base stats
+#define Unused2StrGrowth 15 //Str Growth
+#define Unused2SklGrowth 25 //Skl Growth
+#define Unused2SpdGrowth 15 //Sod Growth
+#define Unused2LckGrowth 10 //Lck Growth
+#define Unused2DefGrowth 30 //Def Growth
+#define Unused2HPGrowth 50 //HP Growth
+#define Unused2LearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define Unused2Item 0 //Item in equip slot
+#define Unused2EarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

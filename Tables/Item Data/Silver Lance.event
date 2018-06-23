@@ -1,0 +1,5 @@
+#define SilverLanceMt 4 //Weapon might
+#define SilverLanceWt 1 //Weapon weight 
+#define SilverLanceCrt 0 //Weapon crit
+#define SilverLanceHit 80 //Weapon accuracy
+#define SilverLanceEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

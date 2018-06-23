@@ -1,0 +1,20 @@
+#define CliveCharNo 0x0A //Character order in menu is determined by character #, defined here
+#define CliveClass Cavalier //Starting class
+#define CliveLevel 6 //Starting Level
+#define CliveBaseHP 26 //Base HP
+#define CliveBaseStr 12 //Base Str
+#define CliveBaseSkl 7 //Base Skl
+#define CliveBaseSpd 7 //Base Spd
+#define CliveBaseLck 6 //Base Lck
+#define CliveBaseDef 7 //Base Def
+#define CliveBaseRes 1 //Base Res, stored separately from the rest of the base stats
+#define CliveStrGrowth 20 //Str Growth
+#define CliveSklGrowth 20 //Skl Growth
+#define CliveSpdGrowth 20 //Sod Growth
+#define CliveLckGrowth 20 //Lck Growth
+#define CliveDefGrowth 20 //Def Growth
+#define CliveHPGrowth 40 //HP Growth
+#define CliveLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define CliveItem SteelLance //Item in equip slot
+#define CliveEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

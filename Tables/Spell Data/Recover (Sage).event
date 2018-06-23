@@ -1,0 +1,6 @@
+#define Recover1Mt 0 //Weapon might
+#define Recover1Wt 0 //Weapon weight 
+#define Recover1Crt 0 //Weapon crit
+#define Recover1Hit 0 //Weapon accuracy
+#define Recover1Eff 0x //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define Recover1HPcost 3 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

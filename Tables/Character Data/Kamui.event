@@ -1,0 +1,20 @@
+#define KamuiCharNo 0x11 //Character order in menu is determined by character #, defined here
+#define KamuiClass Mercenary //Starting class
+#define KamuiLevel 3 //Starting Level
+#define KamuiBaseHP 24 //Base HP
+#define KamuiBaseStr 10 //Base Str
+#define KamuiBaseSkl 5 //Base Skl
+#define KamuiBaseSpd 8 //Base Spd
+#define KamuiBaseLck 2 //Base Lck
+#define KamuiBaseDef 6 //Base Def
+#define KamuiBaseRes 2 //Base Res, stored separately from the rest of the base stats
+#define KamuiStrGrowth 25 //Str Growth
+#define KamuiSklGrowth 20 //Skl Growth
+#define KamuiSpdGrowth 40 //Sod Growth
+#define KamuiLckGrowth 20 //Lck Growth
+#define KamuiDefGrowth 20 //Def Growth
+#define KamuiHPGrowth 30 //HP Growth
+#define KamuiLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define KamuiItem 0 //Item in equip slot
+#define KamuiEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

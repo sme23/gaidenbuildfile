@@ -1,0 +1,20 @@
+#define CelicaCharNo 0x02 //Character order in menu is determined by character #, defined here
+#define CelicaClass Priestess //Starting class
+#define CelicaLevel 1 //Starting Level
+#define CelicaBaseHP 20 //Base HP
+#define CelicaBaseStr 8 //Base Str
+#define CelicaBaseSkl 6 //Base Skl
+#define CelicaBaseSpd 6 //Base Spd
+#define CelicaBaseLck 8 //Base Lck
+#define CelicaBaseDef 4 //Base Def
+#define CelicaBaseRes 7 //Base Res, stored separately from the rest of the base stats
+#define CelicaStrGrowth 25 //Str Growth
+#define CelicaSklGrowth 40 //Skl Growth
+#define CelicaSpdGrowth 30 //Spd Growth
+#define CelicaLckGrowth 40 //Lck Growth
+#define CelicaDefGrowth 20 //Def Growth
+#define CelicaHPGrowth 30 //HP Growth
+#define CelicaLearnedMagic 0x01 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define CelicaItem 0 //Item in equip slot
+#define CelicaEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

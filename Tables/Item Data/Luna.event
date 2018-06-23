@@ -1,0 +1,5 @@
+#define LunaMt 10 //Weapon might
+#define LunaWt 1 //Weapon weight 
+#define LunaCrt 0 //Weapon crit
+#define LunaHit 100 //Weapon accuracy
+#define LunaEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

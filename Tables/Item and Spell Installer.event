@@ -1,0 +1,65 @@
+#include "Item Data/Astra.event"
+#include "Item Data/Blessed Bow.event"
+#include "Item Data/Blessed Lance.event"
+#include "Item Data/Blessed Sword.event"
+#include "Item Data/Brave Sword.event"
+#include "Item Data/Falchion.event"
+#include "Item Data/Gradivus.event"
+#include "Item Data/Javelin.event"
+#include "Item Data/Knight Killer.event"
+#include "Item Data/Luna.event"
+#include "Item Data/Royal Sword.event"
+#include "Item Data/Shadow Sword.event"
+#include "Item Data/Silver Bow.event"
+#include "Item Data/Silver Lance.event"
+#include "Item Data/Silver Sword.event"
+#include "Item Data/Sol.event"
+#include "Item Data/Steel Bow.event"
+#include "Item Data/Steel Lance.event"
+#include "Item Data/Steel Sword.event"
+#include "Item Data/Tentacle.event"
+#include "Item Data/Thunder Sword.event"
+
+#include "Spell Data/Angel.event"
+#include "Spell Data/Aura.event"
+#include "Spell Data/Dear.event"
+#include "Spell Data/Death.event"
+#include "Spell Data/Dora.event"
+#include "Spell Data/Excalibur.event"
+#include "Spell Data/Eyeball.event"
+#include "Spell Data/Eyebeam.event"
+#include "Spell Data/Fire.event"
+#include "Spell Data/Gaia (Unused).event"
+#include "Spell Data/Illusion.event"
+#include "Spell Data/Medusa.event"
+#include "Spell Data/Messiah.event"
+#include "Spell Data/Ragnarok.event"
+#include "Spell Data/Reblow.event"
+#include "Spell Data/Recover (Cleric).event"
+#include "Spell Data/Recover (Sage).event"
+#include "Spell Data/Reserve (Cleric).event"
+#include "Spell Data/Reserve (Sage).event"
+#include "Spell Data/Resire.event"
+#include "Spell Data/Sagittae.event"
+#include "Spell Data/Slime.event"
+#include "Spell Data/Thunder.event"
+#include "Spell Data/Warp.event"
+
+
+ORG 0x3DA66 //hit
+BYTE SteelLanceHit SilverLanceHit JavelinHit BlessedLanceHit KnightKillerHit GradivusHit AstraHit SolHit LunaHit SteelSwordHit SilverSwordHit BraveSwordHit ShadowSwordHit ThunderSwordHit BlessedSwordHit FalchionHit RoyalSwordHit TentacleHit SteelBowHit BlessedBowHit SilverBowHit FireHit ThunderHit RagnarokHit SeraphimHit ExcaliburHit SagittaeHit AuraHit GaiaHit DoraHit SlimeHit DeathHit MedusaHit Recover1Hit Reserve1Hit MessiahHit EyebeamHit EyeballHit Recover2Hit ReblowHit ResireHit WarpHit Reserve2Hit IllusionHit DearHit
+
+ORG 0x3DA96 //crt
+BYTE SteelLanceCrt SilverLanceCrt JavelinCrt BlessedLanceCrt KnightKillerCrt GradivusCrt AstraCrt SolCrt LunaCrt SteelSwordCrt SilverSwordCrt BraveSwordCrt ShadowSwordCrt ThunderSwordCrt BlessedSwordCrt FalchionCrt RoyalSwordCrt TentacleCrt SteelBowCrt BlessedBowCrt SilverBowCrt FireCrt ThunderCrt RagnarokCrt SeraphimCrt ExcaliburCrt SagittaeCrt AuraCrt GaiaCrt DoraCrt SlimeCrt DeathCrt MedusaCrt Recover1Crt Reserve1Crt MessiahCrt EyebeamCrt EyeballCrt Recover2Crt ReblowCrt ResireCrt WarpCrt Reserve2Crt IllusionCrt DearCrt
+
+ORG 0x3DAC6 //eff
+BYTE SteelLanceEff SilverLanceEff JavelinEff BlessedLanceEff KnightKillerEff GradivusEff AstraEff SolEff LunaEff SteelSwordEff SilverSwordEff BraveSwordEff ShadowSwordEff ThunderSwordEff BlessedSwordEff FalchionEff RoyalSwordEff TentacleEff SteelBowEff BlessedBowEff SilverBowEff FireEff ThunderEff RagnarokEff SeraphimEff ExcaliburEff SagittaeEff AuraEff GaiaEff DoraEff SlimeEff DeathEff MedusaEff Recover1Eff Reserve1Eff MessiahEff EyebeamEff EyeballEff Recover2Eff ReblowEff ResireEff WarpEff Reserve2Eff IllusionEff DearEff
+
+ORG 0x3D9CB //mt
+BYTE SteelLanceMt SilverLanceMt JavelinMt BlessedLanceMt KnightKillerMt GradivusMt AstraMt SolMt LunaMt SteelSwordMt SilverSwordMt BraveSwordMt ShadowSwordMt ThunderSwordMt BlessedSwordMt FalchionMt RoyalSwordMt TentacleMt SteelBowMt BlessedBowMt SilverBowMt FireMt ThunderMt RagnarokMt SeraphimMt ExcaliburMt SagittaeMt AuraMt GaiaMt DoraMt SlimeMt DeathMt MedusaMt Recover1Mt Reserve1Mt MessiahMt EyebeamMt EyeballMt Recover2Mt ReblowMt ResireMt WarpMt Reserve2Mt IllusionMt DearMt
+
+ORG 0x3DA36 //wt
+BYTE SteelLanceWt SilverLanceWt JavelinWt BlessedLanceWt KnightKillerWt GradivusWt AstraWt SolWt LunaWt SteelSwordWt SilverSwordWt BraveSwordWt ShadowSwordWt ThunderSwordWt BlessedSwordWt FalchionWt RoyalSwordWt TentacleWt SteelBowWt BlessedBowWt SilverBowWt FireWt ThunderWt RagnarokWt SeraphimWt ExcaliburWt SagittaeWt AuraWt GaiaWt DoraWt SlimeWt DeathWt MedusaWt Recover1Wt Reserve1Wt MessiahWt EyebeamWt EyeballWt Recover2Wt ReblowWt ResireWt WarpWt Reserve2Wt IllusionWt DearWt 
+
+ORG 0x3DA1B //hpcost
+BYTE FireHPCost ThunderHPCost SeraphimHPCost ExcaliburHPCost SagittaeHPCost AuraHPCost GaiaHPCost DoraHPCost SlimeHPCost DeathHPCost MedusaHPCost Recover1HPCost Reserve1HPCost MessiahHPCost EyebeamHPCost EyeballHPCost Recover2HPCost ReblowHPCost ResireHPCost WarpHPCost Reserve2HPCost IllusionHPCost DearHPCost

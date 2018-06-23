@@ -1,0 +1,6 @@
+#define GradivusMt 4 //Weapon might
+#define GradivusWt 1 //Weapon weight 
+#define GradivusCrt 0//Weapon crit
+#define GradivusHit 100 //Weapon accuracy
+#define GradivusEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+

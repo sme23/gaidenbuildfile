@@ -1,0 +1,20 @@
+#define EstCharNo 0x21 //Character order in menu is determined by character #, defined here
+#define EstClass PegasusKnight //Starting class
+#define EstLevel 3 //Starting Level
+#define EstBaseHP 20 //Base HP
+#define EstBaseStr 9 //Base Str
+#define EstBaseSkl 5 //Base Skl
+#define EstBaseSpd 11 //Base Spd
+#define EstBaseLck 5 //Base Lck
+#define EstBaseDef 4 //Base Def
+#define EstBaseRes 12 //Base Res, stored separately from the rest of the base stats
+#define EstStrGrowth 40 //Str Growth
+#define EstSklGrowth 50 //Skl Growth
+#define EstSpdGrowth 30 //Sod Growth
+#define EstLckGrowth 50 //Lck Growth
+#define EstDefGrowth 50 //Def Growth
+#define EstHPGrowth 30 //HP Growth
+#define EstLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define EstItem 0 //Item in equip slot
+#define EstEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

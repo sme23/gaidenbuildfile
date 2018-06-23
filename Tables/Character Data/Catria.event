@@ -1,0 +1,20 @@
+#define CatriaCharNo 0x1F //Character order in menu is determined by character #, defined here
+#define CatriaClass PegasusKnight //Starting class
+#define CatriaLevel 5 //Starting Level
+#define CatriaBaseHP 24 //Base HP
+#define CatriaBaseStr 11 //Base Str
+#define CatriaBaseSkl 12 //Base Skl
+#define CatriaBaseSpd 12 //Base Spd
+#define CatriaBaseLck 12 //Base Lck
+#define CatriaBaseDef 5 //Base Def
+#define CatriaBaseRes 9 //Base Res, stored separately from the rest of the base stats
+#define CatriaStrGrowth 30 //Str Growth
+#define CatriaSklGrowth 30 //Skl Growth
+#define CatriaSpdGrowth 40 //Sod Growth
+#define CatriaLckGrowth 20 //Lck Growth
+#define CatriaDefGrowth 20 //Def Growth
+#define CatriaHPGrowth 30 //HP Growth
+#define CatriaLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define CatriaItem AngelRing //Item in equip slot
+#define CatriaEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

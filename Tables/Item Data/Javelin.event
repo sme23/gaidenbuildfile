@@ -1,0 +1,5 @@
+#define JavelinMt 4 //Weapon might
+#define JavelinWt 1 //Weapon weight
+#define JavelinCrt 0 //Weapon crit
+#define JavelinHit 70 //Weapon accuracy
+#define JavelinEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

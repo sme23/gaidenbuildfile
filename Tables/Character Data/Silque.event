@@ -1,0 +1,20 @@
+#define SilqueCharNo 0x0E //Character order in menu is determined by character #, defined here
+#define SilqueClass Cleric //Starting class
+#define SilqueLevel 1 //Starting Level
+#define SilqueBaseHP 18 //Base HP
+#define SilqueBaseStr 8 //Base Str
+#define SilqueBaseSkl 3 //Base Skl
+#define SilqueBaseSpd 4 //Base Spd
+#define SilqueBaseLck 4 //Base Lck
+#define SilqueBaseDef 1 //Base Def
+#define SilqueBaseRes 11 //Base Res, stored separately from the rest of the base stats
+#define SilqueStrGrowth 30 //Str Growth
+#define SilqueSklGrowth 30 //Skl Growth
+#define SilqueSpdGrowth 30 //Sod Growth
+#define SilqueLckGrowth 30 //Lck Growth
+#define SilqueDefGrowth 10 //Def Growth
+#define SilqueHPGrowth 20 //HP Growth
+#define SilqueLearnedMagic 0x05 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define SilqueItem 0 //Item in equip slot
+#define SilqueEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

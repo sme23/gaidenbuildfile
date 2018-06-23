@@ -1,0 +1,5 @@
+#define SilverSwordMt 8 //Weapon might
+#define SilverSwordWt 1 //Weapon weight 
+#define SilverSwordCrt 0 //Weapon crit
+#define SilverSwordHit 90 //Weapon accuracy
+#define SilverSwordEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

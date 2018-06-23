@@ -1,0 +1,20 @@
+#define PallaCharNo 0x20 //Character order in menu is determined by character #, defined here
+#define PallaClass PegasusKnight //Starting class
+#define PallaLevel 8 //Starting Level
+#define PallaBaseHP 28 //Base HP
+#define PallaBaseStr 12 //Base Str
+#define PallaBaseSkl 9 //Base Skl
+#define PallaBaseSpd 10 //Base Spd
+#define PallaBaseLck 4 //Base Lck
+#define PallaBaseDef 6 //Base Def
+#define PallaBaseRes 5 //Base Res, stored separately from the rest of the base stats
+#define PallaStrGrowth 40 //Str Growth
+#define PallaSklGrowth 15 //Skl Growth
+#define PallaSpdGrowth 10 //Sod Growth
+#define PallaLckGrowth 10 //Lck Growth
+#define PallaDefGrowth 30 //Def Growth
+#define PallaHPGrowth 40 //HP Growth
+#define PallaLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define PallaItem Javelin //Item in equip slot
+#define PallaEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

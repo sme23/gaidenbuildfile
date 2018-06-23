@@ -1,0 +1,20 @@
+#define GrayCharNo 0x08 //Character order in menu is determined by character #, defined here
+#define GrayClass Villager //Starting class
+#define GrayLevel 5 //Starting Level
+#define GrayBaseHP 24 //Base HP
+#define GrayBaseStr 9 //Base Str
+#define GrayBaseSkl 4 //Base Skl
+#define GrayBaseSpd 4 //Base Spd
+#define GrayBaseLck 2 //Base Lck
+#define GrayBaseDef 4 //Base Def
+#define GrayBaseRes 2 //Base Res, stored separately from the rest of the base stats
+#define GrayStrGrowth 30 //Str Growth
+#define GraySklGrowth 20 //Skl Growth
+#define GraySpdGrowth 10 //Sod Growth
+#define GrayLckGrowth 10 //Lck Growth
+#define GrayDefGrowth 20 //Def Growth
+#define GrayHPGrowth 40 //HP Growth
+#define GrayLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define GrayItem 0 //Item in equip slot
+#define GrayEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

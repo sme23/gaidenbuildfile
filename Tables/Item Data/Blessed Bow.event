@@ -1,0 +1,5 @@
+#define BlessedBowMt 5 //Weapon might
+#define BlessedBowWt 0 //Weapon weight 
+#define BlessedBowCrt 10 //Weapon crit
+#define BlessedBowHit 100 //Weapon accuracy
+#define BlessedBowEff 0x01 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

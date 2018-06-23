@@ -1,0 +1,20 @@
+#define MathildaCharNo 0x13 //Character order in menu is determined by character #, defined here
+#define MathildaClass Paladin //Starting class
+#define MathildaLevel 1 //Starting Level
+#define MathildaBaseHP 26 //Base HP
+#define MathildaBaseStr 12 //Base Str
+#define MathildaBaseSkl 14 //Base Skl
+#define MathildaBaseSpd 12 //Base Spd
+#define MathildaBaseLck 13 //Base Lck
+#define MathildaBaseDef 7 //Base Def
+#define MathildaBaseRes 10 //Base Res, stored separately from the rest of the base stats
+#define MathildaStrGrowth 30 //Str Growth
+#define MathildaSklGrowth 20 //Skl Growth
+#define MathildaSpdGrowth 40 //Sod Growth
+#define MathildaLckGrowth 10 //Lck Growth
+#define MathildaDefGrowth 30 //Def Growth
+#define MathildaHPGrowth 40 //HP Growth
+#define MathildaLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define MathildaItem 0 //Item in equip slot
+#define MathildaEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

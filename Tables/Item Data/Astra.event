@@ -1,0 +1,5 @@
+#define AstraMt 1 //Weapon might0
+#define AstraWt 0 //Weapon weight
+#define AstraCrt 50//Weapon crit
+#define AstraHit 100 //Weapon accuracy
+#define AstraEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

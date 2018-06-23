@@ -1,0 +1,6 @@
+#define TentacleMt 12 //Weapon might
+#define TentacleWt 0 //Weapon weight 
+#define TentacleCrt 0 //Weapon crit
+#define TentacleHit 80 //Weapon accuracy
+#define TentacleEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+//Tentacle is considered a sword for whatever reason, so anyone who can use a sword can use this weapon

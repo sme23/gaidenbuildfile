@@ -1,0 +1,6 @@
+#define SeraphimMt 8 //Weapon might
+#define SeraphimWt 4 //Weapon weight 
+#define SeraphimCrt 0 //Weapon crit
+#define SeraphimHit 90 //Weapon accuracy
+#define SeraphimEff 0x01 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define SeraphimHPcost 4 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

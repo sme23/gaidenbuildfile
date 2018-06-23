@@ -1,0 +1,5 @@
+#define SteelBowMt 3 //Weapon might
+#define SteelBowWt 1 //Weapon weight 
+#define SteelBowCrt 0 //Weapon crit
+#define SteelBowHit 70 //Weapon accuracy
+#define SteelBowEff 0x03 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

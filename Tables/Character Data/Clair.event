@@ -1,0 +1,20 @@
+#define ClairCharNo 0x08 //Character order in menu is determined by character #, defined here
+#define ClairClass PegasusKnight //Starting class
+#define ClairLevel 1 //Starting Level
+#define ClairBaseHP 20 //Base HP
+#define ClairBaseStr 8 //Base Str
+#define ClairBaseSkl 4 //Base Skl
+#define ClairBaseSpd 7 //Base Spd
+#define ClairBaseLck 11 //Base Lck
+#define ClairBaseDef 4 //Base Def
+#define ClairBaseRes 4 //Base Res, stored separately from the rest of the base stats
+#define ClairStrGrowth 30 //Str Growth
+#define ClairSklGrowth 50 //Skl Growth
+#define ClairSpdGrowth 40 //Sod Growth
+#define ClairLckGrowth 50 //Lck Growth
+#define ClairDefGrowth 10 //Def Growth
+#define ClairHPGrowth 20 //HP Growth
+#define ClairLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define ClairItem 0 //Item in equip slot
+#define ClairEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

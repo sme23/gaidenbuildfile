@@ -1,0 +1,165 @@
+NES asm notes
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+How the NES Works (no actual asm in this part but it's good information to have)
+
+because confusion it's not metric
+1KB=1024 bytes
+Kb is kilobits, but not entirely sure that'll matter
+
+sections of memory
+ROM - the stuff stored on the cart
+RAM - 2KB of RAM for storing variables, 2KB of RAM for storing two screens-worth of background graphics
+PRG - program memory, stores game code
+CHR - character memory, stores game graphics
+WRAM - Work RAM, used for battery saving
+
+physical structure | Diagram: http://www.nesmuseum.com/images/nesarchitecture.png
+
+CPU 
+-16-bit address bus can access up to 64KB of memory.  
+-That space contains 2KB of CPU RAM, ports to access the PPU and APU, WRAM if applicable, and 32KB dedicated to PRG ROM. | Diagram: http://www.nesmuseum.com/images/cpumemmap.png
+-Addresses are in hex, from $0000 to $FFFF
+-Because CPU would only allow for games of 32KB or less in size, memory mappers are used; most common size is 128KB PRG and 64KB CHR
+-It appears that both FE1 and FE2 use a mapper, as their ROM sizes are many times larger than 32KB.
+
+
+PPU - Picture Processing Unit, the graphics chip | Diagram: http://www.nesmuseum.com/images/ppumemmap.png
+-Stores sprites and color palette in its internal RAM
+-Works on a per-scanline basis; if more than 8 sprites are on a single scanline all further ones are ignored
+-First fetches sprites, then background from the cart's CHR memory
+-Only when all scanlines have been processed will no graphics be actively updated on the screen, at which point graphics in PPU RAM can be updated; this period is VBlank
+
+APU - Audio Processing Unit, the sound chip (contained within the CPU)
+Lockout Chip - Doesn't matter when hacking FE since it's a JP game and lockout chip was a NES thing not a Famicom thing
+
+Graphics
+
+-All graphics are made up of 8x8 tiles
+-PPU can store 64 sprites in its memory at a time
+-PPU can store 2 full backgrounds worth of background tiles at a time
+-Background is a 32x30 display of 8x8 tiles
+-Pattern Tables are where tile data is stored, each holds 256 tiles
+-One Pattern Table for backgrounds, one for sprites
+-Attribute Tables set color information for tiles in 2x2 sections
+-Two palettes hold the color information, 16 colors per palette, one palette for background and one for sprites
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+The actual ASM stuff
+
+-Labels can be used the same way as if it were in an EA event (not "#define", the "Label:" labels) (NES assembly rips off Event Assembler confirmed??????)
+-Opcodes are a collection of 56 processor instructions, if/when I get my hands on an opcode glossary link will go here
+-Operands are the values you pass through opcodes, can be 1 to 3 per opcode
+-(oh god) Comments are delcared with a semicolon, then everything after it in a line is ignored
+
+
+Locations that stuff is actually stored
+
+$0000-0800 - Internal RAM, 2KB chip in the NES
+$2000-2007 - PPU access ports
+$4000-4017 - Audio and controller access ports
+$6000-7FFF - Optional WRAM inside the game cart
+$8000-FFFF - Game cart ROM
+
+Registers
+
+-three 8-bit registers, one status register that are generally usable
+	-Accumulator is the register used for loading, storing, comparing, and mathing data
+	-Index Register X is the register usually used for counting or accessing memory; does things such as tracking how many times a loop has run
+	-Index Register Y is essentially the same as X, but some instructions only work with X and not Y (/shrug)
+	-Status Register holds flags that contain information about the last instruction run; can be used to check results of instructions and such
+
+	
+	
+Load/Store/Transfer opcodes
+
+LDA #$XX - Loads the value $XX into the accumulator ('L'oa'D' 'A'ccumulator)
+LDX $XXXX - Loads the value $XXXX into the index register X ('L'oa'D' Index Register 'X')
+LDY #$XX - Loads the value $XX into the index register Y ('L'oa'D' Index Register 'Y')
+
+STA $XXXX - Stores the value from the accumulator into the address $XXXX ('S''T'ore 'A'ccumulator)
+STX $XXXX - Stores the value in X to the address $XXXX ('S''T'ore 'X')
+STY $XXXX - Stores the value in Y to the address $XXXX ('S''T'ore 'Y')
+
+TAX - Transfer the value from A into X
+TAY - Transfer the value from A into Y
+TXA - Transfer the value from X into A
+TYA - Transfer the value from Y into A
+
+Math opcodes
+
+ADC #$XX - Add with carry; A = A + $XX + carry; if zero, status register flag set
+SBC #$XX - Subtract with carry; A= A - $XX - (1 - carry); if zero, status register flag set
+CLC - Clear Carry flag in status register; usually done before ADC
+SEC - Set Carry flag in status register; usually done before SBC
+
+INC $XXXX - Increment value at address $XXXX; if zero, status register flag set
+DEC $XXXX - Decrement value at address $XXXX; if zero, status register flag set
+INY - Increment value in Y register; if zero, status register flag set
+INX - Increment value in X register; if zero, status register flag set
+DEY - Decrement value in Y register; if zero, status register flag set
+DEX - Decrement value in X register; if zero, status register flag set
+ASL A - shifts all bits 1 to the left, acts as x2 multiplication; if zero, status register flag set
+LSR $XXXX - shifts all bits 1 to the right, acts as /2 division; if zero, status register flag set
+
+Comparison opcodes
+
+CMP #$XX - Compare A to the value $XX; whether its equal, less than, or greater than is stored in the Status Register
+CPX $XXXX - Compare X to the value at address $XXXX; whether its equal, less than, or greater than is stored in the Status Register
+CPY #$XX - Compare Y to the value $XX; whether its equal, less than, or greater than is stored in the Status Register
+
+Control Flow opcodes
+
+JMP $XXXX - Jumps to address $XXXX, continues from there
+BEQ $XXXX - Branch if Equal, continue running code from address $XXXX; this is intended to be preceded by a CMP to set or clear the zero flag, which this opcode checks to see if equal or not (if equal zero flag is set from CMP)
+BNE $XXXX - Branch if Not Equal, continue running code from address $XXXX; this is intended to be preceded by a CMP to set or clear the zero flag, which this opcode checks to see if equal or not (if equal zero flag is set from CMP)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+NESASM Code Structure
+
+-The 16 byte iNES header gives the emulator everything it needs to know about the game, such as mapper, graphics mirroring, and PRG/CHR sizes. This is an example iNES header:
+      .inesprg 1   ; 1x 16KB bank of PRG code
+      .ineschr 1   ; 1x 8KB bank of CHR data
+      .inesmap 0   ; mapper 0 = NROM, no bank swapping
+      .inesmir 1   ; background mirroring (ignore for now)
+
+-NESASM arranges everything in 8KB code and graphics banks, numbering starts at 0 (as expected).  With a 16KB PRG bank and an 8KB CHR bank, as set in the previous example:
+      .bank 0
+      .org $C000
+    ;some code here
+    
+      .bank 1
+      .org $E000
+    ; more code here
+    
+      .bank 2
+      .org $0000
+    ; graphics here
+
+-Binary files can be used for graphics data or similar
+-(.incbin "filename.chr") is an example of how it would be done
+
+Vectors
+
+-Three vectors are stored in PRG ROM, which tell the processor where to go each time the Processor interrupts the code (of which there are 3 cases)
+	-NMI Vector happens once per frame and tells that VBlank is starting, then this jumps to the portion of code that updates the graphics.
+	-RESET Vector happens when the NES is powered on or the Reset button is pressed, used to tell the NES where the game actually starts (ex. where the title screen is located)
+	-IRQ Vector is related to audio interrupts or is triggered by mapper chips; external sources
+
+-(.dw) is the function that defines 1 word, which is 2 bytes in size.
+-Vectors must appear in the proper order in code, ex:
+
+      .bank 1
+      .org $FFFA     ;first of the three vectors starts here
+      .dw NMI        ;when an NMI happens (once per frame if enabled) the 
+                   ;processor will jump to the label NMI:
+      .dw RESET      ;when the processor first turns on or is reset, it will jump
+                       ;to the label RESET:
+      .dw 0          ;external interrupt IRQ is not used in this tutorial
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+I feel that this is a fairly good amount of information, at least for disassembling what I'm attempting to at the moment.

@@ -1,0 +1,5 @@
+#define SteelLanceMt 4 //Weapon might
+#define SteelLanceWt 1 //Weapon weight 
+#define SteelLanceCrt 0 //Weapon crit
+#define SteelLanceHit 80 //Weapon accuracy
+#define SteelLanceEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

@@ -1,0 +1,5 @@
+#define FalchionMt 10 //Weapon might
+#define FalchionWt 0 //Weapon weight 
+#define FalchionCrt 0 //Weapon crit
+#define FalchionHit 100 //Weapon accuracy
+#define FalchionEff 0x01 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

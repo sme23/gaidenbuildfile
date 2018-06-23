@@ -1,0 +1,20 @@
+#define LukasCharNo 0x05 //Character order in menu is determined by character #, defined here
+#define LukasClass Soldier //Starting class
+#define LukasLevel 2 //Starting Level
+#define LukasBaseHP 22 //Base HP
+#define LukasBaseStr 10 //Base Str
+#define LukasBaseSkl 4 //Base Skl
+#define LukasBaseSpd 4 //Base Spd
+#define LukasBaseLck 2 //Base Lck
+#define LukasBaseDef 6 //Base Def
+#define LukasBaseRes 2 //Base Res, stored separately from the rest of the base stats
+#define LukasStrGrowth 15 //Str Growth
+#define LukasSklGrowth 35 //Skl Growth
+#define LukasSpdGrowth 15 //Sod Growth
+#define LukasLckGrowth 20 //Lck Growth
+#define LukasDefGrowth 20 //Def Growth
+#define LukasHPGrowth 40 //HP Growth
+#define LukasLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define LukasItem 0 //Item in equip slot
+#define LukasEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,6 @@
+#define DeathMt 15 //Weapon might
+#define DeathWt 9 //Weapon weight 
+#define DeathCrt 0 //Weapon crit
+#define DeathHit 70 //Weapon accuracy
+#define DeathEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define DeathHPcost 5 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

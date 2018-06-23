@@ -1,0 +1,6 @@
+#define DoraMt 3 //Weapon might
+#define DoraWt 3 //Weapon weight 
+#define DoraCrt 0 //Weapon crit
+#define DoraHit 80 //Weapon accuracy
+#define DoraEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define DoraHPcost 1 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

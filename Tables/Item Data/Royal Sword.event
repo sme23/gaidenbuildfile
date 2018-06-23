@@ -1,0 +1,5 @@
+#define RoyalSwordMt 7 //Weapon might
+#define RoyalSwordWt 0 //Weapon weight 
+#define RoyalSwordCrt 20 //Weapon crit
+#define RoyalSwordHit 100 //Weapon accuracy
+#define RoyalSwordEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

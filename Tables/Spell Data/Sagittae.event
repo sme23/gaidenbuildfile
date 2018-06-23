@@ -1,0 +1,6 @@
+#define SagittaeMt 16 //Weapon might
+#define SagittaeWt 11 //Weapon weight 
+#define SagittaeCrt 0 //Weapon crit
+#define SagittaeHit 70 //Weapon accuracy
+#define SagittaeEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define SagittaeHPcost 8 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

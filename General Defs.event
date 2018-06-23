@@ -1,0 +1,59 @@
+//Classes
+#define Cavalier 0x01 //Mounted Tier 1
+#define Armor 0x02 //Soldier Tier 2
+#define PegasusKnight 0x03 //Flier Tier 1
+#define Paladin 0x04 //Mounted Tier 2
+#define Falcoknight 0x05 //Flier Tier 2
+#define Soldier 0x06 //Soldier Tier 1
+#define GoldKnight 0x07 //Mounted Tier 3
+#define Mercenary 0x08 //Merc Tier 1
+#define Myrmidon 0x09 //Merc Tier 2
+#define DreadFighter 0x0A //Merc Tier 3
+#define Priestess 0x0B //MageF Tier 2/Celica
+#define Archer 0x0C //Archer Tier 1
+#define Sniper 0x0D //Archer Tier 2
+#define Villager 0x0E //Classless Tier 0
+#define MageM 0x0F //MageM Tier 1
+#define MageF 0x10 //MageF Tier 2
+#define Saint 0x11 //Cleric Tier 2
+#define Cleric 0x12 //Cleric Tier 1
+#define Sage 0x13 //MageM Tier 2
+#define BowKnight 0x14 //Archer Tier 3
+#define Fighter 0x15 //Alm's Starting Class
+#define Baron 0x16 // Soldier Tier 3
+#define Hero 0x17 //Alm's Promoted Class
+#define Princess 0x18 //Celica's Promoted Class
+
+//Items
+#define SteelLance 0x02
+#define SilverLance 0x03
+#define Javelin 0x04
+#define BlessedLance 0x05
+#define KnightKiller 0x06
+#define Gradivus 0x07
+#define Astra 0x08
+#define Sol 0x09
+#define Luna 0x0A
+#define SteelSword 0x0B
+#define SilverSword 0x0C
+#define BraveSword 0x0D
+#define ShadowSword 0x0E
+#define ThunderSword 0x0F
+#define BlessedSword 0x10
+#define Falchion 0x11
+#define RoyalSword 0x12
+#define Tentacle 0x13
+#define SteelBow 0x14
+#define BlessedBow 0x15
+#define SilverBow 0x16
+#define LeatherShield 0x30
+#define SteelShield 0x31
+#define SilverShield 0x32
+#define BlessedShield 0x33
+#define MagicSealShield 0x34
+#define DragonShield 0x35
+#define HolyRing 0x36
+#define AngelRing 0x37
+#define SpeedRing 0x38
+#define MageRing 0x39
+#define PrayerRing 0x3A

@@ -1,0 +1,20 @@
+#define ValbarCharNo 0x12 //Character order in menu is determined by character #, defined here
+#define ValbarClass Armor //Starting class
+#define ValbarLevel 1 //Starting Level
+#define ValbarBaseHP 30 //Base HP
+#define ValbarBaseStr 14 //Base Str
+#define ValbarBaseSkl 5 //Base Skl
+#define ValbarBaseSpd 2 //Base Spd
+#define ValbarBaseLck 1 //Base Lck
+#define ValbarBaseDef 12 //Base Def
+#define ValbarBaseRes 0 //Base Res, stored separately from the rest of the base stats
+#define ValbarStrGrowth 20 //Str Growth
+#define ValbarSklGrowth 35 //Skl Growth
+#define ValbarSpdGrowth 25 //Sod Growth
+#define ValbarLckGrowth 10 //Lck Growth
+#define ValbarDefGrowth 20 //Def Growth
+#define ValbarHPGrowth 40 //HP Growth
+#define ValbarLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define ValbarItem 0 //Item in equip slot
+#define ValbarEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

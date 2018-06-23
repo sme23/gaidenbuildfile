@@ -1,0 +1,20 @@
+#define MaeCharNo 0x0D //Character order in menu is determined by character #, defined here
+#define MaeClass MageF //Starting class
+#define MaeLevel 1 //Starting Level
+#define MaeBaseHP 20 //Base HP
+#define MaeBaseStr 9 //Base Str
+#define MaeBaseSkl 1 //Base Skl
+#define MaeBaseSpd 7 //Base Spd
+#define MaeBaseLck 5 //Base Lck
+#define MaeBaseDef 2 //Base Def
+#define MaeBaseRes 10 //Base Res, stored separately from the rest of the base stats
+#define MaeStrGrowth 40 //Str Growth
+#define MaeSklGrowth 20 //Skl Growth
+#define MaeSpdGrowth 10 //Sod Growth
+#define MaeLckGrowth 10 //Lck Growth
+#define MaeDefGrowth 20 //Def Growth
+#define MaeHPGrowth 20 //HP Growth
+#define MaeLearnedMagic 0x03 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define MaeItem 0 //Item in equip slot
+#define MaeEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,5 @@
+#define SolMt 20 //Weapon might
+#define SolWt 2 //Weapon weight 
+#define SolCrt 0 //Weapon crit
+#define SolHit 80 //Weapon accuracy
+#define SolEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

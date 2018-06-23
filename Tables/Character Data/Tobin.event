@@ -1,0 +1,20 @@
+#define TobinCharNo 0x07 //Character order in menu is determined by character #, defined here
+#define TobinClass Villager //Starting class
+#define TobinLevel 2 //Starting Level
+#define TobinBaseHP 22 //Base HP
+#define TobinBaseStr 7 //Base Str
+#define TobinBaseSkl 2 //Base Skl
+#define TobinBaseSpd 6 //Base Spd
+#define TobinBaseLck 4 //Base Lck
+#define TobinBaseDef 3 //Base Def
+#define TobinBaseRes 4 //Base Res, stored separately from the rest of the base stats
+#define TobinStrGrowth 10 //Str Growth
+#define TobinSklGrowth 40 //Skl Growth
+#define TobinSpdGrowth 15 //Spd Growth
+#define TobinLckGrowth 30 //Lck Growth
+#define TobinDefGrowth 10 //Def Growth
+#define TobinHPGrowth 30 //HP Growth
+#define TobinLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define TobinItem 0 //Item in equip slot, 0 if empty
+#define TobinEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

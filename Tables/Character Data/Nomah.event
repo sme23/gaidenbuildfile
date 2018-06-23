@@ -1,0 +1,20 @@
+#define NomahCharNo 0x04 //Character order in menu is determined by character #, defined here
+#define NomahClass Sage //Starting class
+#define NomahLevel 7 //Starting Level
+#define NomahBaseHP 28 //Base HP
+#define NomahBaseStr 12 //Base Str
+#define NomahBaseSkl 16 //Base Skl
+#define NomahBaseSpd 8 //Base Spd
+#define NomahBaseLck 1 //Base Lck
+#define NomahBaseDef 6 //Base Def
+#define NomahBaseRes 14 //Base Res, stored separately from the rest of the base stats
+#define NomahStrGrowth 10 //Str Growth
+#define NomahSklGrowth 15 //Skl Growth
+#define NomahSpdGrowth 15 //Sod Growth
+#define NomahLckGrowth 10 //Lck Growth
+#define NomahDefGrowth 10 //Def Growth
+#define NomahHPGrowth 10 //HP Growth
+#define NomahLearnedMagic 0xB3 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define NomahItem 0 //Item in equip slot
+#define NomahEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,6 @@
+#define EyebeamMt 10 //Weapon might
+#define EyebeamWt 4 //Weapon weight 
+#define EyebeamCrt 0 //Weapon crit
+#define EyebeamHit 70 //Weapon accuracy
+#define EyebeamEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define EyebeamHPcost 0 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

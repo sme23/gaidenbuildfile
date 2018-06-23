@@ -1,0 +1,20 @@
+#define LuthierCharNo 0x1C //Character order in menu is determined by character #, defined here
+#define LuthierClass MageM //Starting class
+#define LuthierLevel 7 //Starting Level
+#define LuthierBaseHP 28 //Base HP
+#define LuthierBaseStr 12 //Base Str
+#define LuthierBaseSkl 9 //Base Skl
+#define LuthierBaseSpd 7 //Base Spd
+#define LuthierBaseLck 2 //Base Lck
+#define LuthierBaseDef 5 //Base Def
+#define LuthierBaseRes 8 //Base Res, stored separately from the rest of the base stats
+#define LuthierStrGrowth 20 //Str Growth
+#define LuthierSklGrowth 20 //Skl Growth
+#define LuthierSpdGrowth 15 //Sod Growth
+#define LuthierLckGrowth 50 //Lck Growth
+#define LuthierDefGrowth 15 //Def Growth
+#define LuthierHPGrowth 40 //HP Growth
+#define LuthierLearnedMagic 0x11 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define LuthierItem 0 //Item in equip slot
+#define LuthierEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,148 @@
+//There's 34 character slots for playable characters, character data is stored in 3 separate places in ROM.
+//This file will make it easy to edit all of this information at once.
+#include "Character Data/Alm.event"
+#include "Character Data/Celica.event"
+#include "Character Data/Mycen.event"
+#include "Character Data/Nomah.event"
+#include "Character Data/Lukas.event"
+#include "Character Data/Kliff.event"
+#include "Character Data/Tobin.event"
+#include "Character Data/Gray.event"
+#include "Character Data/Clair.event"
+#include "Character Data/Clive.event"
+#include "Character Data/Clive 2 (Unused).event"
+#include "Character Data/Forsyth.event"
+#include "Character Data/Mae.event"
+#include "Character Data/Silque.event"
+#include "Character Data/Genny.event"
+#include "Character Data/Boey.event"
+#include "Character Data/Kamui.event"
+#include "Character Data/Valbar.event"
+#include "Character Data/Mathilda.event"
+#include "Character Data/Python.event"
+#include "Character Data/Leon.event"
+#include "Character Data/Atlas.event"
+#include "Character Data/Jesse.event"
+#include "Character Data/Forsyth 2 (Unused).event"
+#include "Character Data/Sonya.event"
+#include "Character Data/Deen.event"
+#include "Character Data/Saber.event"
+#include "Character Data/Luthier.event"
+#include "Character Data/Doot.event"
+#include "Character Data/Tatiana.event"
+#include "Character Data/Catria.event"
+#include "Character Data/Palla.event"
+#include "Character Data/Est.event"
+#include "Character Data/Zeke.event"
+
+PUSH
+
+ORG 0x210F2
+BYTE AlmCharNo AlmClass AlmLevel AlmBaseHP AlmEarnedEXP AlmBaseStr AlmBaseSkl AlmBaseSpd AlmBaseLck AlmBaseDef AlmLearnedMagic AlmItem
+BYTE CelicaCharNo CelicaClass CelicaLevel CelicaBaseHP CelicaEarnedEXP CelicaBaseStr CelicaBaseSkl CelicaBaseSpd CelicaBaseLck CelicaBaseDef CelicaLearnedMagic CelicaItem
+BYTE MycenCharNo MycenClass MycenLevel MycenBaseHP MycenEarnedEXP MycenBaseStr MycenBaseSkl MycenBaseSpd MycenBaseLck MycenBaseDef MycenLearnedMagic MycenItem
+BYTE NomahCharNo NomahClass NomahLevel NomahBaseHP NomahEarnedEXP NomahBaseStr NomahBaseSkl NomahBaseSpd NomahBaseLck NomahBaseDef NomahLearnedMagic NomahItem
+BYTE LukasCharNo LukasClass LukasLevel LukasBaseHP LukasEarnedEXP LukasBaseStr LukasBaseSkl LukasBaseSpd LukasBaseLck LukasBaseDef LukasLearnedMagic LukasItem
+BYTE KliffCharNo KliffClass KliffLevel KliffBaseHP KliffEarnedEXP KliffBaseStr KliffBaseSkl KliffBaseSpd KliffBaseLck KliffBaseDef KliffLearnedMagic KliffItem
+BYTE TobinCharNo TobinClass TobinLevel TobinBaseHP TobinEarnedEXP TobinBaseStr TobinBaseSkl TobinBaseSpd TobinBaseLck TobinBaseDef TobinLearnedMagic TobinItem
+BYTE GrayCharNo GrayClass GrayLevel GrayBaseHP GrayEarnedEXP GrayBaseStr GrayBaseSkl GrayBaseSpd GrayBaseLck GrayBaseDef GrayLearnedMagic GrayItem
+BYTE ClairCharNo ClairClass ClairLevel ClairBaseHP ClairEarnedEXP ClairBaseStr ClairBaseSkl ClairBaseSpd ClairBaseLck ClairBaseDef ClairLearnedMagic ClairItem
+BYTE CliveCharNo CliveClass CliveLevel CliveBaseHP CliveEarnedEXP CliveBaseStr CliveBaseSkl CliveBaseSpd CliveBaseLck CliveBaseDef CliveLearnedMagic CliveItem
+BYTE Unused1CharNo Unused1Class Unused1Level Unused1BaseHP Unused1EarnedEXP Unused1BaseStr Unused1BaseSkl Unused1BaseSpd Unused1BaseLck Unused1BaseDef Unused1LearnedMagic Unused1Item
+BYTE ForsythCharNo ForsythClass ForsythLevel ForsythBaseHP ForsythEarnedEXP ForsythBaseStr ForsythBaseSkl ForsythBaseSpd ForsythBaseLck ForsythBaseDef ForsythLearnedMagic ForsythItem
+BYTE MaeCharNo MaeClass MaeLevel MaeBaseHP MaeEarnedEXP MaeBaseStr MaeBaseSkl MaeBaseSpd MaeBaseLck MaeBaseDef MaeLearnedMagic MaeItem
+BYTE SilqueCharNo SilqueClass SilqueLevel SilqueBaseHP SilqueEarnedEXP SilqueBaseStr SilqueBaseSkl SilqueBaseSpd SilqueBaseLck SilqueBaseDef SilqueLearnedMagic SilqueItem
+BYTE GennyCharNo GennyClass GennyLevel GennyBaseHP GennyEarnedEXP GennyBaseStr GennyBaseSkl GennyBaseSpd GennyBaseLck GennyBaseDef GennyLearnedMagic GennyItem
+BYTE BoeyCharNo BoeyClass BoeyLevel BoeyBaseHP BoeyEarnedEXP BoeyBaseStr BoeyBaseSkl BoeyBaseSpd BoeyBaseLck BoeyBaseDef BoeyLearnedMagic BoeyItem
+BYTE KamuiCharNo KamuiClass KamuiLevel KamuiBaseHP KamuiEarnedEXP KamuiBaseStr KamuiBaseSkl KamuiBaseSpd KamuiBaseLck KamuiBaseDef KamuiLearnedMagic KamuiItem
+BYTE ValbarCharNo ValbarClass ValbarLevel ValbarBaseHP ValbarEarnedEXP ValbarBaseStr ValbarBaseSkl ValbarBaseSpd ValbarBaseLck ValbarBaseDef ValbarLearnedMagic ValbarItem
+BYTE MathildaCharNo MathildaClass MathildaLevel MathildaBaseHP MathildaEarnedEXP MathildaBaseStr MathildaBaseSkl MathildaBaseSpd MathildaBaseLck MathildaBaseDef MathildaLearnedMagic MathildaItem
+BYTE PythonCharNo PythonClass PythonLevel PythonBaseHP PythonEarnedEXP PythonBaseStr PythonBaseSkl PythonBaseSpd PythonBaseLck PythonBaseDef PythonLearnedMagic PythonItem
+BYTE LeonCharNo LeonClass LeonLevel LeonBaseHP LeonEarnedEXP LeonBaseStr LeonBaseSkl LeonBaseSpd LeonBaseLck LeonBaseDef LeonLearnedMagic LeonItem
+BYTE AtlasCharNo AtlasClass AtlasLevel AtlasBaseHP AtlasEarnedEXP AtlasBaseStr AtlasBaseSkl AtlasBaseSpd AtlasBaseLck AtlasBaseDef AtlasLearnedMagic AtlasItem
+BYTE JesseCharNo JesseClass JesseLevel JesseBaseHP JesseEarnedEXP JesseBaseStr JesseBaseSkl JesseBaseSpd JesseBaseLck JesseBaseDef JesseLearnedMagic JesseItem
+BYTE Unused2CharNo Unused2Class Unused2Level Unused2BaseHP Unused2EarnedEXP Unused2BaseStr Unused2BaseSkl Unused2BaseSpd Unused2BaseLck Unused2BaseDef Unused2LearnedMagic Unused2Item
+BYTE SonyaCharNo SonyaClass SonyaLevel SonyaBaseHP SonyaEarnedEXP SonyaBaseStr SonyaBaseSkl SonyaBaseSpd SonyaBaseLck SonyaBaseDef SonyaLearnedMagic SonyaItem
+BYTE DeenCharNo DeenClass DeenLevel DeenBaseHP DeenEarnedEXP DeenBaseStr DeenBaseSkl DeenBaseSpd DeenBaseLck DeenBaseDef DeenLearnedMagic DeenItem
+BYTE SaberCharNo SaberClass SaberLevel SaberBaseHP SaberEarnedEXP SaberBaseStr SaberBaseSkl SaberBaseSpd SaberBaseLck SaberBaseDef SaberLearnedMagic SaberItem
+BYTE LuthierCharNo LuthierClass LuthierLevel LuthierBaseHP LuthierEarnedEXP LuthierBaseStr LuthierBaseSkl LuthierBaseSpd LuthierBaseLck LuthierBaseDef LuthierLearnedMagic LuthierItem
+BYTE DootCharNo DootClass DootLevel DootBaseHP DootEarnedEXP DootBaseStr DootBaseSkl DootBaseSpd DootBaseLck DootBaseDef DootLearnedMagic DootItem
+BYTE TatianaCharNo TatianaClass TatianaLevel TatianaBaseHP TatianaEarnedEXP TatianaBaseStr TatianaBaseSkl TatianaBaseSpd TatianaBaseLck TatianaBaseDef TatianaLearnedMagic TatianaItem
+BYTE CatriaCharNo CatriaClass CatriaLevel CatriaBaseHP CatriaEarnedEXP CatriaBaseStr CatriaBaseSkl CatriaBaseSpd CatriaBaseLck CatriaBaseDef CatriaLearnedMagic CatriaItem
+BYTE PallaCharNo PallaClass PallaLevel PallaBaseHP PallaEarnedEXP PallaBaseStr PallaBaseSkl PallaBaseSpd PallaBaseLck PallaBaseDef PallaLearnedMagic PallaItem
+BYTE EstCharNo EstClass EstLevel EstBaseHP EstEarnedEXP EstBaseStr EstBaseSkl EstBaseSpd EstBaseLck EstBaseDef EstLearnedMagic EstItem
+BYTE ZekeCharNo ZekeClass ZekeLevel ZekeBaseHP ZekeEarnedEXP ZekeBaseStr ZekeBaseSkl ZekeBaseSpd ZekeBaseLck ZekeBaseDef ZekeLearnedMagic ZekeItem
+
+ORG 0x3EE10
+BYTE AlmBaseRes
+BYTE CelicaBaseRes
+BYTE MycenBaseRes
+BYTE NomahBaseRes
+BYTE LukasBaseRes
+BYTE KliffBaseRes
+BYTE TobinBaseRes
+BYTE GrayBaseRes
+BYTE ClairBaseRes
+BYTE CliveBaseRes
+BYTE Unused1BaseRes
+BYTE ForsythBaseRes
+BYTE MaeBaseRes
+BYTE SilqueBaseRes
+BYTE GennyBaseRes
+BYTE BoeyBaseRes
+BYTE KamuiBaseRes
+BYTE ValbarBaseRes
+BYTE MathildaBaseRes
+BYTE PythonBaseRes
+BYTE LeonBaseRes
+BYTE AtlasBaseRes
+BYTE JesseBaseRes
+BYTE Unused2BaseRes
+BYTE SonyaBaseRes
+BYTE DeenBaseRes
+BYTE SaberBaseRes
+BYTE LuthierBaseRes
+BYTE DootBaseRes
+BYTE TatianaBaseRes
+BYTE CatriaBaseRes
+BYTE PallaBaseRes
+BYTE EstBaseRes
+BYTE ZekeBaseRes
+
+ORG 0x24E3D
+BYTE AlmStrGrowth AlmSklGrowth AlmSpdGrowth AlmLckGrowth AlmDefGrowth AlmHPGrowth
+BYTE CelicaStrGrowth CelicaSklGrowth CelicaSpdGrowth CelicaLckGrowth CelicaDefGrowth CelicaHPGrowth
+BYTE MycenStrGrowth MycenSklGrowth MycenSpdGrowth MycenLckGrowth MycenDefGrowth MycenHPGrowth
+BYTE NomahStrGrowth NomahSklGrowth NomahSpdGrowth NomahLckGrowth NomahDefGrowth NomahHPGrowth
+BYTE LukasStrGrowth LukasSklGrowth LukasSpdGrowth LukasLckGrowth LukasDefGrowth LukasHPGrowth
+BYTE KliffStrGrowth KliffSklGrowth KliffSpdGrowth KliffLckGrowth KliffDefGrowth KliffHPGrowth
+BYTE TobinStrGrowth TobinSklGrowth TobinSpdGrowth TobinLckGrowth TobinDefGrowth TobinHPGrowth
+BYTE GrayStrGrowth GraySklGrowth GraySpdGrowth GrayLckGrowth GrayDefGrowth GrayHPGrowth
+BYTE ClairStrGrowth ClairSklGrowth ClairSpdGrowth ClairLckGrowth ClairDefGrowth ClairHPGrowth
+BYTE CliveStrGrowth CliveSklGrowth CliveSpdGrowth CliveLckGrowth CliveDefGrowth CliveHPGrowth
+BYTE Unused1StrGrowth Unused1SklGrowth Unused1SpdGrowth Unused1LckGrowth Unused1DefGrowth Unused1HPGrowth
+BYTE ForsythStrGrowth ForsythSklGrowth ForsythSpdGrowth ForsythLckGrowth ForsythDefGrowth ForsythHPGrowth
+BYTE MaeStrGrowth MaeSklGrowth MaeSpdGrowth MaeLckGrowth MaeDefGrowth MaeHPGrowth
+BYTE SilqueStrGrowth SilqueSklGrowth SilqueSpdGrowth SilqueLckGrowth SilqueDefGrowth SilqueHPGrowth
+BYTE GennyStrGrowth GennySklGrowth GennySpdGrowth GennyLckGrowth GennyDefGrowth GennyHPGrowth
+BYTE BoeyStrGrowth BoeySklGrowth BoeySpdGrowth BoeyLckGrowth BoeyDefGrowth BoeyHPGrowth
+BYTE KamuiStrGrowth KamuiSklGrowth KamuiSpdGrowth KamuiLckGrowth KamuiDefGrowth KamuiHPGrowth
+BYTE ValbarStrGrowth ValbarSklGrowth ValbarSpdGrowth ValbarLckGrowth ValbarDefGrowth ValbarHPGrowth
+BYTE MathildaStrGrowth MathildaSklGrowth MathildaSpdGrowth MathildaLckGrowth MathildaDefGrowth MathildaHPGrowth
+BYTE PythonStrGrowth PythonSklGrowth PythonSpdGrowth PythonLckGrowth PythonDefGrowth PythonHPGrowth
+BYTE LeonStrGrowth LeonSklGrowth LeonSpdGrowth LeonLckGrowth LeonDefGrowth LeonHPGrowth
+BYTE AtlasStrGrowth AtlasSklGrowth AtlasSpdGrowth AtlasLckGrowth AtlasDefGrowth AtlasHPGrowth
+BYTE JesseStrGrowth JesseSklGrowth JesseSpdGrowth JesseLckGrowth JesseDefGrowth JesseHPGrowth
+BYTE Unused2StrGrowth Unused2SklGrowth Unused2SpdGrowth Unused2LckGrowth Unused2DefGrowth Unused2HPGrowth
+BYTE SonyaStrGrowth SonyaSklGrowth SonyaSpdGrowth SonyaLckGrowth SonyaDefGrowth SonyaHPGrowth
+BYTE DeenStrGrowth DeenSklGrowth DeenSpdGrowth DeenLckGrowth DeenDefGrowth DeenHPGrowth
+BYTE SaberStrGrowth SaberSklGrowth SaberSpdGrowth SaberLckGrowth SaberDefGrowth SaberHPGrowth
+BYTE LuthierStrGrowth LuthierSklGrowth LuthierSpdGrowth LuthierLckGrowth LuthierDefGrowth LuthierHPGrowth
+BYTE DootStrGrowth DootSklGrowth DootSpdGrowth DootLckGrowth DootDefGrowth DootHPGrowth
+BYTE TatianaStrGrowth TatianaSklGrowth TatianaSpdGrowth TatianaLckGrowth TatianaDefGrowth TatianaHPGrowth
+BYTE CatriaStrGrowth CatriaSklGrowth CatriaSpdGrowth CatriaLckGrowth CatriaDefGrowth CatriaHPGrowth
+BYTE PallaStrGrowth PallaSklGrowth PallaSpdGrowth PallaLckGrowth PallaDefGrowth PallaHPGrowth
+BYTE EstStrGrowth EstSklGrowth EstSpdGrowth EstLckGrowth EstDefGrowth EstHPGrowth
+BYTE ZekeStrGrowth ZekeSklGrowth ZekeSpdGrowth ZekeLckGrowth ZekeDefGrowth ZekeHPGrowth
+
+POP

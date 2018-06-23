@@ -1,0 +1,20 @@
+#define BoeyCharNo 0x10 //Character order in menu is determined by character #, defined here
+#define BoeyClass MageM //Starting class
+#define BoeyLevel 1 //Starting Level
+#define BoeyBaseHP 22 //Base HP
+#define BoeyBaseStr 8 //Base Str
+#define BoeyBaseSkl 2 //Base Skl
+#define BoeyBaseSpd 4 //Base Spd
+#define BoeyBaseLck 9 //Base Lck
+#define BoeyBaseDef 4 //Base Def
+#define BoeyBaseRes 7 //Base Res, stored separately from the rest of the base stats
+#define BoeyStrGrowth 30 //Str Growth
+#define BoeySklGrowth 15 //Skl Growth
+#define BoeySpdGrowth 10 //Sod Growth
+#define BoeyLckGrowth 20 //Lck Growth
+#define BoeyDefGrowth 40 //Def Growth
+#define BoeyHPGrowth 40 //HP Growth
+#define BoeyLearnedMagic 0x01 //90% sure learned magic is stored in binary, need to investigate this + also need to locate character's spell lists and make an editor for them
+#define BoeyItem 0 //Item in equip slot, 0 if empty
+#define BoeyEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

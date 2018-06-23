@@ -1,0 +1,20 @@
+#define Unused1CharNo 0x0A //Character order in menu is determined by character #, defined here
+#define Unused1Class Cavalier //Starting class
+#define Unused1Level 6 //Starting Level
+#define Unused1BaseHP 26 //Base HP
+#define Unused1BaseStr 12 //Base Str
+#define Unused1BaseSkl 7 //Base Skl
+#define Unused1BaseSpd 7 //Base Spd
+#define Unused1BaseLck 6 //Base Lck
+#define Unused1BaseDef 7 //Base Def
+#define Unused1BaseRes 0 //Base Res, stored separately from the rest of the base stats
+#define Unused1StrGrowth 20 //Str Growth
+#define Unused1SklGrowth 20 //Skl Growth
+#define Unused1SpdGrowth 20 //Sod Growth
+#define Unused1LckGrowth 20 //Lck Growth
+#define Unused1DefGrowth 20 //Def Growth
+#define Unused1HPGrowth 40 //HP Growth
+#define Unused1LearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define Unused1Item SteelLance //Item in equip slot
+#define Unused1EarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,5 @@
+#define BraveSwordMt 5 //Weapon might
+#define BraveSwordWt 0 //Weapon weight 
+#define BraveSwordCrt 30 //Weapon crit
+#define BraveSwordHit 100 //Weapon accuracy
+#define BraveSwordEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

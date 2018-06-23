@@ -1,0 +1,20 @@
+#define SaberCharNo 0x1B //Character order in menu is determined by character #, defined here
+#define SaberClass Mercenary //Starting class
+#define SaberLevel 1 //Starting Level
+#define SaberBaseHP 22 //Base HP
+#define SaberBaseStr 9 //Base Str
+#define SaberBaseSkl 9 //Base Skl
+#define SaberBaseSpd 10 //Base Spd
+#define SaberBaseLck 6 //Base Lck
+#define SaberBaseDef 4 //Base Def
+#define SaberBaseRes 6 //Base Res, stored separately from the rest of the base stats
+#define SaberStrGrowth 20 //Str Growth
+#define SaberSklGrowth 15 //Skl Growth
+#define SaberSpdGrowth 15 //Sod Growth
+#define SaberLckGrowth 10 //Lck Growth
+#define SaberDefGrowth 40 //Def Growth
+#define SaberHPGrowth 50 //HP Growth
+#define SaberLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define SaberItem 0 //Item in equip slot
+#define SaberEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

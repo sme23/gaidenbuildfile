@@ -1,0 +1,20 @@
+#define LeonCharNo 0x15 //Character order in menu is determined by character #, defined here
+#define LeonClass Archer //Starting class
+#define LeonLevel 4 //Starting Level
+#define LeonBaseHP 23 //Base HP
+#define LeonBaseStr 11 //Base Str
+#define LeonBaseSkl 6 //Base Skl
+#define LeonBaseSpd 4 //Base Spd
+#define LeonBaseLck 6 //Base Lck
+#define LeonBaseDef 4 //Base Def
+#define LeonBaseRes 1 //Base Res, stored separately from the rest of the base stats
+#define LeonStrGrowth 20 //Str Growth
+#define LeonSklGrowth 10 //Skl Growth
+#define LeonSpdGrowth 10 //Sod Growth
+#define LeonLckGrowth 10 //Lck Growth
+#define LeonDefGrowth 30 //Def Growth
+#define LeonHPGrowth 50 //HP Growth
+#define LeonLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define LeonItem 0 //Item in equip slot
+#define LeonEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,20 @@
+#define JesseCharNo 0x17 //Character order in menu is determined by character #, defined here
+#define JesseClass Mercenary //Starting class
+#define JesseLevel 6 //Starting Level
+#define JesseBaseHP 28 //Base HP
+#define JesseBaseStr 11 //Base Str
+#define JesseBaseSkl 10 //Base Skl
+#define JesseBaseSpd 12 //Base Spd
+#define JesseBaseLck 9 //Base Lck
+#define JesseBaseDef 5 //Base Def
+#define JesseBaseRes 7 //Base Res, stored separately from the rest of the base stats
+#define JesseStrGrowth 25 //Str Growth
+#define JesseSklGrowth 40 //Skl Growth
+#define JesseSpdGrowth 40 //Sod Growth
+#define JesseLckGrowth 20 //Lck Growth
+#define JesseDefGrowth 25 //Def Growth
+#define JesseHPGrowth 40 //HP Growth
+#define JesseLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define JesseItem 0 //Item in equip slot
+#define JesseEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

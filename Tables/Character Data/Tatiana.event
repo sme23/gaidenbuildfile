@@ -1,0 +1,20 @@
+#define TatianaCharNo 0x1E //Character order in menu is determined by character #, defined here
+#define TatianaClass Saint //Starting class
+#define TatianaLevel 1 //Starting Level
+#define TatianaBaseHP 28 //Base HP
+#define TatianaBaseStr 14 //Base Str
+#define TatianaBaseSkl 12 //Base Skl
+#define TatianaBaseSpd 10 //Base Spd
+#define TatianaBaseLck 2 //Base Lck
+#define TatianaBaseDef 3 //Base Def
+#define TatianaBaseRes 18 //Base Res, stored separately from the rest of the base stats
+#define TatianaStrGrowth 10 //Str Growth
+#define TatianaSklGrowth 15 //Skl Growth
+#define TatianaSpdGrowth 15 //Sod Growth
+#define TatianaLckGrowth 20 //Lck Growth
+#define TatianaDefGrowth 40 //Def Growth
+#define TatianaHPGrowth 40 //HP Growth
+#define TatianaLearnedMagic 0x86 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define TatianaItem 0 //Item in equip slot
+#define TatianaEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

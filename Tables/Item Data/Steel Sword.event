@@ -1,0 +1,5 @@
+#define SteelSwordMt 4 //Weapon might
+#define SteelSwordWt 1 //Weapon weight 
+#define SteelSwordCrt 0 //Weapon crit
+#define SteelSwordHit 80 //Weapon accuracy
+#define SteelSwordEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

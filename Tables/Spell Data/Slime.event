@@ -1,0 +1,6 @@
+#define SlimeMt 10 //Weapon might
+#define SlimeWt 6 //Weapon weight 
+#define SlimeCrt 0 //Weapon crit
+#define SlimeHit 70 //Weapon accuracy
+#define SlimeEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define SlimeHPcost 2 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

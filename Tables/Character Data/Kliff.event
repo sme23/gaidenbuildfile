@@ -1,0 +1,20 @@
+#define KliffCharNo 0x06 //Character order in menu is determined by character #, defined here
+#define KliffClass Villager //Starting class
+#define KliffLevel 1 //Starting Level
+#define KliffBaseHP 20 //Base HP
+#define KliffBaseStr 7 //Base Str
+#define KliffBaseSkl 1 //Base Skl
+#define KliffBaseSpd 2 //Base Spd
+#define KliffBaseLck 10 //Base Lck
+#define KliffBaseDef 3 //Base Def
+#define KliffBaseRes 8 //Base Res, stored separately from the rest of the base stats
+#define KliffStrGrowth 20 //Str Growth
+#define KliffSklGrowth 40 //Skl Growth
+#define KliffSpdGrowth 50 //Sod Growth
+#define KliffLckGrowth 20 //Lck Growth
+#define KliffDefGrowth 40 //Def Growth
+#define KliffHPGrowth 50 //HP Growth
+#define KliffLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define KliffItem 0 //Item in equip slot
+#define KliffEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

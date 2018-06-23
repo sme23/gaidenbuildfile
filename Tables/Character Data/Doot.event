@@ -1,0 +1,20 @@
+#define DootCharNo 0x1D //Character order in menu is determined by character #, defined here
+#define DootClass MageF //Starting class
+#define DootLevel 3 //Starting Level
+#define DootBaseHP 22 //Base HP
+#define DootBaseStr 11 //Base Str
+#define DootBaseSkl 8 //Base Skl
+#define DootBaseSpd 10 //Base Spd
+#define DootBaseLck 15 //Base Lck
+#define DootBaseDef 3 //Base Def
+#define DootBaseRes 15 //Base Res, stored separately from the rest of the base stats
+#define DootStrGrowth 50 //Str Growth
+#define DootSklGrowth 30 //Skl Growth
+#define DootSpdGrowth 20 //Sod Growth
+#define DootLckGrowth 30 //Lck Growth
+#define DootDefGrowth 10 //Def Growth
+#define DootHPGrowth 30 //HP Growth
+#define DootLearnedMagic 0x41 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define DootItem PrayerRing //Item in equip slot
+#define DootEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

@@ -1,0 +1,6 @@
+#define MedusaMt 0 //Weapon might
+#define MedusaWt 13 //Weapon weight 
+#define MedusaCrt 0 //Weapon crit
+#define MedusaHit 70 //Weapon accuracy
+#define MedusaEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define MedusaHPcost 7 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

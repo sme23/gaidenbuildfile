@@ -1,0 +1,6 @@
+#define ThunderMt 4 //Weapon might
+#define ThunderWt 5 //Weapon weight 
+#define ThunderCrt 0 //Weapon crit
+#define ThunderHit 70 //Weapon accuracy
+#define ThunderEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define ThunderHPcost 2 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)

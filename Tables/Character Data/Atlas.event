@@ -1,0 +1,20 @@
+#define AtlasCharNo 0x16 //Character order in menu is determined by character #, defined here
+#define AtlasClass Villager //Starting class
+#define AtlasLevel 10 //Starting Level
+#define AtlasBaseHP 30 //Base HP
+#define AtlasBaseStr 14 //Base Str
+#define AtlasBaseSkl 3 //Base Skl
+#define AtlasBaseSpd 3 //Base Spd
+#define AtlasBaseLck 4 //Base Lck
+#define AtlasBaseDef 5 //Base Def
+#define AtlasBaseRes 4 //Base Res, stored separately from the rest of the base stats
+#define AtlasStrGrowth 30 //Str Growth
+#define AtlasSklGrowth 20 //Skl Growth
+#define AtlasSpdGrowth 10 //Spd Growth
+#define AtlasLckGrowth 15 //Lck Growth
+#define AtlasDefGrowth 20 //Def Growth
+#define AtlasHPGrowth 30 //HP Growth
+#define AtlasLearnedMagic 0x00 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define AtlasItem 0 //Item in equip slot, 9 if empty
+#define AtlasEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

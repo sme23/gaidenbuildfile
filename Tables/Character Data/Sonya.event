@@ -1,0 +1,20 @@
+#define SonyaCharNo 0x19 //Character order in menu is determined by character #, defined here
+#define SonyaClass MageF //Starting class
+#define SonyaLevel 5 //Starting Level
+#define SonyaBaseHP 24 //Base HP
+#define SonyaBaseStr 13 //Base Str
+#define SonyaBaseSkl 11 //Base Skl
+#define SonyaBaseSpd 12 //Base Spd
+#define SonyaBaseLck 4 //Base Lck
+#define SonyaBaseDef 5 //Base Def
+#define SonyaBaseRes 12 //Base Res, stored separately from the rest of the base stats
+#define SonyaStrGrowth 30 //Str Growth
+#define SonyaSklGrowth 30 //Skl Growth
+#define SonyaSpdGrowth 30 //Sod Growth
+#define SonyaLckGrowth 30 //Lck Growth
+#define SonyaDefGrowth 30 //Def Growth
+#define SonyaHPGrowth 30 //HP Growth
+#define SonyaLearnedMagic 0x13 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define SonyaItem SteelShield //Item in equip slot
+#define SonyaEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

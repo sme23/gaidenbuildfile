@@ -1,0 +1,5 @@
+#define BlessedLanceMt 4 //Weapon might
+#define BlessedLanceWt 1 //Weapon weight 
+#define BlessedLanceCrt 10 //Weapon crit
+#define BlessedLanceHit 90 //Weapon accuracy
+#define BlessedLanceEff 0x01 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight

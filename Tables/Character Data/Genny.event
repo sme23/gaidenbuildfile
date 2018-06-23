@@ -1,0 +1,20 @@
+#define GennyCharNo 0x0F //Character order in menu is determined by character #, defined here
+#define GennyClass Cleric //Starting class
+#define GennyLevel 1 //Starting Level
+#define GennyBaseHP 18 //Base HP
+#define GennyBaseStr 7 //Base Str
+#define GennyBaseSkl 2 //Base Skl
+#define GennyBaseSpd 5 //Base Spd
+#define GennyBaseLck 7 //Base Lck
+#define GennyBaseDef 1 //Base Def
+#define GennyBaseRes 13 //Base Res, stored separately from the rest of the base stats
+#define GennyStrGrowth 40 //Str Growth
+#define GennySklGrowth 40 //Skl Growth
+#define GennySpdGrowth 15 //Sod Growth
+#define GennyLckGrowth 20 //Lck Growth
+#define GennyDefGrowth 20 //Def Growth
+#define GennyHPGrowth 20 //HP Growth
+#define GennyLearnedMagic 0x05 //90% sure learned magic is stored in binary, also need to locate character's spell lists and make an editor for them
+#define GennyItem 0 //Item in equip slot
+#define GennyEarnedEXP 0 //Amount of EXP towards the next level
+//There's no Res growth in the game at all so it isn't defined here

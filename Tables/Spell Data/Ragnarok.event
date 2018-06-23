@@ -1,0 +1,6 @@
+#define RagnarokMt 24 //Weapon might
+#define RagnarokWt 20 //Weapon weight 
+#define RagnarokCrt 0 //Weapon crit
+#define RagnarokHit 100 //Weapon accuracy
+#define RagnarokEff 0x00 //Effectiveness: 0x00=None, 0x01=Monster, 0x02=None, 0x03=Flying, 0x04=Horse/Knight
+#define RagnarokHPcost 10 //HP cost, spells only (standard weapons/items aren't even on the HP cost table)
