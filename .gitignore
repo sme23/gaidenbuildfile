@@ -18,10 +18,10 @@ $RECYCLE.BIN/
 *.lnk
 
 #Rom stuff
-*.gba
+*.nes
 *.sav
 *.sgm
-
+*.deb
 # =========================
 # Operating System Files
 # =========================
