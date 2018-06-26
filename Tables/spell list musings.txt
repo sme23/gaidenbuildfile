@@ -1,0 +1,39 @@
+Doot
+
+Ragnarok lv. 16
+Angel lv. 11
+starts with fire and aura (should be 0x41 in char data)
+Recover upon promotion
+
+if this is a table then it should be 
+spell 0x6 at level 0x0A
+spell 0x2 at level 0x0F
+doot's spell data should be one of the following:
+06 0A 02 0F
+0A 06 0F 02
+it should be in the bank that's always loaded in, bank 0A iirc
+each bank is 16KB, the 11th bank with an offset of 0x10 should be 
+
+
+256KB = 40000B
+16KB = 1/16th of 256KB
+1/1
+2510 - bank 1
++2500
+5010 - bank 2
++2500
+7510 - bank 3
++2500
+10010 - bank 4
++2500
+12510 - bank 5
++2500
+15010 - bank 6
++2500
+17510 - bank 7
++2500
+20010 - bank 8
++2500
+22510 - bank 9
++2500
+25010 - bank A
